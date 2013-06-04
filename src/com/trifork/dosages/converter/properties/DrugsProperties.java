@@ -8,6 +8,7 @@ public class DrugsProperties {
 	private String separatorRegEx;
 	private int columnCount;
 	private int columnForDrugId;
+	private int columnForDrugName;
 	private int columnForUnitSingular;  
 	private int columnForUnitPlural;
 	
@@ -33,6 +34,10 @@ public class DrugsProperties {
 	
 	public int getColumnForDrugId() {
 		return columnForDrugId;
+	}
+
+	public int getColumnForDrugName() {
+		return columnForDrugName;
 	}
 	
 	public int getColumnForUnitSingular() {

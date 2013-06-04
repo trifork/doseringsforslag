@@ -62,6 +62,7 @@ public class Drugs {
 					if(hasRead.contains(ss[properties.getDrugs().getColumnForDrugId()])) 
 						throw new RuntimeException("Cannot read \""+file.getAbsolutePath()+"\": Duplicate drugId "+ss[properties.getDrugs().getColumnForDrugId()]+" in line \""+s+"\"");
 					DosageUnit dosageUnit = dosageUnits.getDosageUnit(ss[properties.getDrugs().getColumnForUnitSingular()], ss[properties.getDrugs().getColumnForUnitPlural()]);
+					String drugName = ss[properties.getDrugs().getColumnForDrugName()];
 					drugList.add(
 						new Drug(
 								null, 
@@ -69,7 +70,7 @@ public class Drugs {
 								drugId,
 								dosageUnit.getCode(), 
 								null, 
-								"-"));
+								drugName));
 					hasRead.add(drugId);
 				}
 			}

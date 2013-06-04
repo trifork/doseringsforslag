@@ -8,24 +8,25 @@
 	}, 
 
 	"units": {
-		"inputFileName":"input/doseringsenheder_03JUN2013.txt", 
+		"inputFileName":"input/doseringsenheder_04JUN2013.txt", 
 		"outputFileName":"output/DosageUnits.json",
 		"encoding":"ISO-8859-1", 
 		"separatorRegEx":";",
-		"columnCount":3,
-		"columnForUnitSingular":"1", 
-		"columnForUnitPlural":"2"
+		"columnCount":4,
+		"columnForUnitSingular":2, 
+		"columnForUnitPlural":3
 	}, 
 
 	"drugs": {
-		"inputFileName":"input/doseringsenheder_03JUN2013.txt", 
+		"inputFileName":"input/doseringsenheder_04JUN2013.txt", 
 		"outputFileName":"output/Drugs.json",
 		"encoding":"ISO-8859-1", 
 		"separatorRegEx":";",
-		"columnCount":3,
-		"columnForDrugId":"0",
-		"columnForUnitSingular":"1", 
-		"columnForUnitPlural":"2"
+		"columnCount":4,
+		"columnForDrugId":0,
+		"columnForDrugName":1,
+		"columnForUnitSingular":2, 
+		"columnForUnitPlural":3
 	},
 
 	"dosageStructures": {
