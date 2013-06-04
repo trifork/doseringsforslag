@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonParseException;
 import com.trifork.dosages.converter.properties.ConverterProperties;
@@ -17,16 +16,6 @@ import com.trifork.dosages.vo.DrugsDosageStructures;
 import com.trifork.dosages.vo.Version;
 
 public class Converter {
-	
-	public static final int releaseNumber = 7;
-	public static final String releaseDate = "2013-06-03";
-	public static final String lmsDate = "2013-05-27";
-	public static final String daDate = "2000-01-01";
-
-	public static final String inputDirName = "input";
-	public static final String outputDirName = "output";
-	public static final String unitTextFileName = "doseringsenheder_03JUN2013.txt";
-	public static final String drugsFileName = "doseringsenheder_03JUN2013.txt";
 	
 	public static void main(String[] args) {
 		new Converter().convert();
