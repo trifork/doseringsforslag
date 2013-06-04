@@ -1,0 +1,43 @@
+{
+	"version": {
+		"releaseNumber":7,
+		"outputFileName":"output/DosageVersion.json",
+		"releaseDate":"2013-06-03",
+		"lmsDate":"2013-05-27",
+		"daDate":"2000-01-01"
+	}, 
+
+	"units": {
+		"inputFileName":"input/doseringsenheder_03JUN2013.txt", 
+		"outputFileName":"output/DosageUnits.json",
+		"encoding":"ISO-8859-1", 
+		"separatorRegEx":";",
+		"columnCount":3,
+		"columnForUnitSingular":"1", 
+		"columnForUnitPlural":"2"
+	}, 
+
+	"drugs": {
+		"inputFileName":"input/doseringsenheder_03JUN2013.txt", 
+		"outputFileName":"output/Drugs.json",
+		"encoding":"ISO-8859-1", 
+		"separatorRegEx":";",
+		"columnCount":3,
+		"columnForDrugId":"0",
+		"columnForUnitSingular":"1", 
+		"columnForUnitPlural":"2"
+	},
+
+	"dosageStructures": {
+		"outputFileName":"output/DosageStructures.json"
+	},
+
+	"drugsDosageStructures": {
+		"outputFileName":"output/DrugsDosageStructures.json"
+	},
+
+	"zipFile": {
+		"outputFileName":"output/Doseringsforslag.zip"
+	}
+			
+}
